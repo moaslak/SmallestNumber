@@ -27,7 +27,7 @@ public class Main
         double d = 0;
         try
         {
-            d = input.nextDouble();
+            d = Double.parseDouble(input.nextLine());
         }
         catch (NumberFormatException e)
         {
@@ -51,12 +51,12 @@ public class Main
 
         do
         {
-            if (dArray[0] >= dArray[1] && dArray[0] >= dArray[2])
+            if (dArray[0] > dArray[1] && dArray[0] > dArray[2])
             {
                 ConsoleWriteLine("The largest number is:");
                 ConsoleWriteLine(Double.toString(dArray[0]));
 
-                if (dArray[1] >= dArray[2])
+                if (dArray[1] > dArray[2])
                 {
                     ConsoleWriteLine("The second largest number is:");
                     ConsoleWriteLine(Double.toString(dArray[1]));
@@ -72,12 +72,12 @@ public class Main
                 }
                 RUN = false;
             }
-            if(dArray[1] >= dArray[0] && dArray[1] >= dArray[2])
+            if(dArray[1] > dArray[0] && dArray[1] > dArray[2])
             {
                 ConsoleWriteLine("The largest number is:");
                 ConsoleWriteLine(Double.toString(dArray[1]));
 
-                if (dArray[0] >= dArray[2])
+                if (dArray[0] > dArray[2])
                 {
                     ConsoleWriteLine("The second largest number is:");
                     ConsoleWriteLine(Double.toString(dArray[0]));
@@ -93,12 +93,12 @@ public class Main
                 }
                 RUN = false;
             }
-            if(dArray[2] >= dArray[0] && dArray[2] >= dArray[1])
+            if(dArray[2] > dArray[0] && dArray[2] > dArray[1])
             {
                 ConsoleWriteLine("The largest number is:");
                 ConsoleWriteLine(Double.toString(dArray[2]));
 
-                if (dArray[0] >= dArray[1])
+                if (dArray[0] > dArray[1])
                 {
                     ConsoleWriteLine("The second largest number is:");
                     ConsoleWriteLine(Double.toString(dArray[0]));
